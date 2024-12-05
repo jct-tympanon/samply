@@ -12,7 +12,7 @@ use nom::multi::separated_list1;
 use nom::sequence::{terminated, tuple};
 use nom::{Err, IResult};
 use zerocopy::{AsBytes, LittleEndian, Ref, U32, U64};
-use zerocopy_derive::{FromBytes, FromZeroes, Unaligned};
+use zerocopy_derive::*;
 
 use crate::CodeId;
 
